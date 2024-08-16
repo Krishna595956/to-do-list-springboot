@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org.1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+  <title>Displaying Task Details</title>
+</head>
+<body>
+
+<h1>Task Details</h1>
+
+<ul>
+    <li th:each="task : ${tasks}">
+        <p th:text="${task.name}"></p>
+        <p th:text="${task.email}"></p>
+    </li>
+</ul>
+
+</body>
+</html>
